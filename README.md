@@ -12,41 +12,41 @@ required_bio_teachingperiod = 0
 current_mathperiods= 12
 current_physicsperiods = 12
 
-mon1=[]
-tues1=[]
-wed1=[]
-thurs1=[]
-fri1=[]
+mon1=["PSHE", "Chem", "Chem", "Study"]
+tues1=["PSHE", "PE", "Physics", "Physics"]
+wed1=["PSHE","Programming", "Programming", "Study"]
+thurs1=["PSHE", "Math", "Math", "Study"]
+fri1=["PSHE", "PE", "Bio", "Bio"]
 
-mon2=[]
-tues2=[]
-wed2=[]
-thurs2=[]
-fri2=[]
+mon2=["PSHE","Bio", "Bio","Study"]
+tues2=["PSHE","PE", "Chem", "Chem"]
+wed2=["PSHE", "Physics", "Physics","Study"]
+thurs2=["PSHE", "Programming", "Programming", "Study"]
+fri2=["PSHE", "PE", "Math", "Math"]
 
-mon3=[]
-tues3=[]
-wed3=[]
-thurs3=[]
-fri3=[]
+mon3=["PSHE", "Math", "Math", "Study"]
+tues3=["PSHE", "PE", "Bio", "Bio"]
+wed3=["PSHE","Chem", "Chem", "Study"]
+thurs3=["PSHE","Physics", "Physics","Study"]
+fri3=["PSHE", "PE","Programming", "Programming"]
 
-mon4=[]
-tues4=[]
-wed4=[]
-thurs4=[]
-fri4=[]
+mon4=["PSHE","Programming", "Programming", "Study"]
+tues4=["PSHE", "PE", "Math", "Math"]
+wed4=["PSHE", "Bio", "Bio","Study" ]
+thurs4=["PSHE","Chem", "Chem", "Study" ]
+fri4=["PSHE", "PE","Physics", "Physics"]
 
-mon5=[]
-tues5=[]
-wed5=[]
-thurs5=[]
-fri5=[]
+mon5=["PSHE","Physics", "Physics", "Study" ]
+tues5=["PSHE", "PE","Programming", "Programming"]
+wed5=["PSHE", "Math", "Math", "Study"]
+thurs5=["PSHE", "Bio", "Bio","Study" ]
+fri5=["PSHE", "PE", "Chem", "Chem"]
 
-mon6=[]
-tues6=[]
-wed6=[]
-thurs6=[]
-fri6=[]
+mon6=["Physics", "Study", "PSHE", "Physics"]
+tues6=["Programming", "Programming", "PSHE", "PE"]
+wed6=["Math","Study", "PSHE","Math" ]
+thurs6=["Bio", "Study", "PSHE", "Bio"]
+fri6=["Chem", "Chem", "PSHE", "PE"]
 
 while numberofteachers< 0 or numberofteachers>10:
     print("Invalid number. Must be at least 0 or at max 10")
@@ -76,118 +76,6 @@ for counter in range(0,numberofteachers):
             teachers_teaching_length[counter] = int(input("Please enter again for Math"))
     if main_subject[counter] == "Bio":
         required_bio_teachingperiod = required_bio_teachingperiod+1
-
-for counter in range (2):
-    mon1.append(mon1)
-    mon2.append(mon2)
-    mon3.append(mon3)
-    mon4.append(mon4)
-    mon5.append(mon5)
-    tues1.append(tues1)
-    tues2.append(tues2)
-    tues3.append(tues3)
-    tues4.append(tues4)
-    tues5.append(tues5)
-    wed1.append(wed1)
-    wed2.append(wed2)
-    wed3.append(wed3)
-    wed4.append(wed4)
-    wed5.append(wed5)
-    wed6.append(wed6)
-    thurs6.append(thurs6)
-    fri6.append(fri6)
-    #chemistry as 1 st 2
-    mon1[counter] = classes[0]
-    tues3[counter] = classes[0]
-    wed5[counter] = classes[0]
-    # Physics 1st 2
-    tues2[counter] = classes[1]
-    wed4[counter] = classes[1]
-    mon5[counter] = classes[1]
-    fri6[counter] = classes[1]
-    # Programming 1st 2
-    tues1[counter] = classes[2]
-    wed3[counter] = classes[2]
-    mon4[counter] = classes[2]
-    thurs6[counter] = classes[2]
-    #Math 1st 2
-    wed2[counter] = classes[3]
-    mon3[counter] = classes[3]
-    tues5[counter] = classes[3]
-    # Bio 1st 2
-    wed1[counter] = classes[4]
-    mon2[counter] = classes[4]
-    tues4[counter] = classes[4]
-
-for counter in range (2,4):
-    mon1.append(mon1)
-    mon2.append(mon2)
-    mon3.append(mon3)
-    mon4.append(mon4)
-    mon5.append(mon5)
-    tues1.append(tues1)
-    tues2.append(tues2)
-    tues3.append(tues3)
-    tues4.append(tues4)
-    tues5.append(tues5)
-    wed1.append(wed1)
-    wed2.append(wed2)
-    wed3.append(wed3)
-    wed4.append(wed4)
-    wed5.append(wed5)
-    wed6.append(wed6)
-    thurs6.append(thurs6)
-    fri6.append(fri6)
-    #Chemistry as last 2 periods
-    mon2[counter] = classes[0]
-    tues4[counter] = classes[0]
-    fri6[counter] = classes[0]
-    #Physics as last 2 periods
-    mon1[counter] = classes[1]
-    tues3[counter] = classes[1]
-    #Programming as last 2
-    tues2[counter] = classes[2]
-    mon5[counter] = classes[2]
-    #Math
-    tues1[counter] = classes[3]
-    mon4[counter] = classes[3]
-    thurs6[counter] = classes[3]
-    #Bio
-    mon3[counter] = classes[4]
-    tues5[counter] = classes[4]
-    wed6[counter] = classes[4]
-    #Study
-    wed1[counter] = "Study"
-    wed2[counter] = "Study"
-    wed3[counter] = "Study"
-    wed4[counter] = "Study"
-    wed5[counter] = "Study"
-
-for counter in range(0,4):
-    thurs1.append(thurs1)
-    thurs2.append(thurs2)
-    thurs3.append(thurs3)
-    thurs4.append(thurs4)
-    thurs5.append(thurs5)
-    mon6.append(mon6)
-    tues6.append(tues6)
-    fri1.append(fri1)
-    fri2.append(fri2)
-    fri3.append(fri3)
-    fri4.append(fri4)
-    fri5.append(fri5)
-    thurs1[counter] = "Study"
-    thurs2[counter] = "Study"
-    thurs3[counter] = "Study"
-    thurs4[counter] = "Study"
-    thurs5[counter] = "Study"
-    mon6[counter] = "Study"
-    tues6[counter] = "Study"
-    fri1[counter] = "Study"
-    fri2[counter] = "Study"
-    fri3[counter] = "Study"
-    fri4[counter] = "Study"
-    fri5[counter] = "Study"
 
 print("-This is for Class 1-")
 print("Monday", mon1)
